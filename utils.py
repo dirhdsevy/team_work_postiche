@@ -8,3 +8,8 @@ def nsd_finder(a, b):
     while b:
         a, b = b, a % b
     return a
+
+def is_power_of_5(n):
+	while n != 1 and n % 5 == 0:
+		n //= 5
+	return n == 1
